@@ -234,7 +234,7 @@ import {
   ✦ ───『 *news* 』─── ⚝
   ◈ .news
   ◈ .technews
-  ◈ .ndtv
+  ◈ .ndtv 
   ╰──────────⳹
   `
   let economy = `
@@ -541,53 +541,52 @@ import {
     
     *${ucpn}* 
    
-    乂───『 *U S E R*』───乂
-    ⛥ *Name:* ${name}
-    ⛥ *Gold:* ${credit}
-    ⛥ *Role:* ${role}
-    ⛥ *Level:* ${level}
-    ⛥ *Xp:* ${exp}
+    乂───『 *المستخدم*』───乂
+    ⛥ *الاسم:* ${name}
+    ⛥ *ذهب:* ${credit}
+    ⛥ *دور:* ${role}
+    ⛥ *المشتوى:* ${level}
+    ⛥ *اكس_بي:* ${exp}
     ╰──────────⳹
    
-    乂───『 *I N F O*』───乂
-    ⛥ *Bot Name:* ${botname}
-    ⛥ *Mode:* ${mode}
-    ⛥ *Platform:* ${platform}
-    ⛥ *Type:* NodeJs
+    乂───『 *معلومات البوت *』───乂
+    ⛥ *اسم البوت:* ${botname}
+    ⛥ *الوضع:* ${mode}
+    ⛥ *المنصة:* ${platform}
+    ⛥ *الموظيل:* NodeJs
     ⛥ *Baileys:* Multi Device
-    ⛥ *Prefix:* [ *${usedPrefix}* ]
-    ⛥ *Uptime:* ${muptime}
-    ⛥ *Database:*  ${totalreg}
+    ⛥ *قبل كل امر:* [ *${usedPrefix}* ]
+    ⛥ *مدة التشغيل:* ${muptime}
+    ⛥ *قاعدة البيانات:*  ${totalreg}
     ╰──────────⳹
     
-    乂───『 *I N F O  C M D*』───乂 
-    │ *${totalfeatures}* Commands
+    乂───『 *معلومات CMD*』───乂 
+    │ *${totalfeatures}* الاوامر 
     ╰──────────⳹
      ${readMore}
 
     乂───『 *INFO*』───乂 
-  │*Reply with the number*
-  │ to get respected Menu*
+  │*يرجى الرد بالرقم للحصول على القائمة*
   ╰───────⳹
   ╭───────⳹
-  │ *1.* Bot Menu
-  │ *2.* Owner Menu
-  │ *3.* Group Menu
-  │ *4.* Fun Menu
-  │ *5.* Reaction Menu
-  │ *6.* Downloader Menu
-  │ *7.* Game Menu
-  │ *8.* Logo Menu
-  │ *9.* Sticker Menu
-  │ *10.* Audio Menu
-  │ *11.* News Menu
-  │ *12.* Economy Menu
-  │ *13.* Anime Menu
-  │ *14.* NSFW Menu
-  │ *15.* Tools Menu
-  │ *16.* AI Menu
-  │ *17.* Religion Menu
-  │ *18.* Plugin Menu
+   │ *1.* قائمة الروبوت
+   │ *2.* قائمة المطور
+   │ *3.* قائمة المجموعة
+   │ *4.* قائمة المتعة
+   │ *5.* قائمة التفاعل
+   │ *6.* قائمة التنزيل
+   │ *7.* قائمة اللعبة
+   │ *8.* قائمة اللوغو
+   │ *9.* قائمة الملصقات
+   │ *10.* قائمة الصوت
+   │ *11.* قائمة الأخبار
+   │ *12.* قائمة الاقتصاد
+   │ *13.* قائمة الأنمي
+   │ *14.* قائمة NSFW
+   │ *15.* قائمة الأدوات
+   │ *16.* قائمة الذكاء الاصطناعي
+   │ *17.* قائمة الدين
+   │ *18.* قائمة البرنامج المساعد 
   ╰───────⳹
  ${readMore}` 
 ;
