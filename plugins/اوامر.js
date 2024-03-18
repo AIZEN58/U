@@ -431,7 +431,7 @@ import {
   let Aimenu = `
   ✦ ───『 *AI* 』─── ⚝
   ◈ .bing
-  ◈ .dalle
+  ◈ .شكل
   ◈ .chatgpt
   ◈ .toanime
   ◈ .gitagpt
@@ -690,7 +690,7 @@ import {
         caption: pluginmenu
       }, { quoted:fcontact });
       } else {
-        m.reply('Invalid choice. Please reply with a valid number.');
+        m.reply('*اختيار خاطئ، الرجاء اختيار رقم صحيح*.');
       }
   
   };
