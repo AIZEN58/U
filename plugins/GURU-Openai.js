@@ -27,7 +27,7 @@ let handler = async (m, { text, conn, usedPrefix, command }) => {
 
       if (!result) {
         
-        throw new Error('No valid JSON response from the first API');
+        throw new Error('No valid JSON response from the first API ');
       }
 
       await conn.relayMessage(m.chat, {
@@ -41,7 +41,7 @@ let handler = async (m, { text, conn, usedPrefix, command }) => {
       }, {});
       m.react(done);
     } catch (error) {
-      console.error('Error from the first API:', error);
+      console.error('خطا في النتيجة:', error);
 
   
       const model = 'llama';
@@ -67,11 +67,11 @@ let handler = async (m, { text, conn, usedPrefix, command }) => {
 
   } catch (error) {
     console.error('Error:', error);
-    throw `*ERROR*`;
+    throw `*خطأ*`;
   }
 };
 handler.help = ['chatgpt']
 handler.tags = ['AI']
-handler.command = ['bro', 'chatgpt', 'ai', 'gpt'];
+handler.command = ['شات جي بي تي', 'chatgpt', 'جي بي تي', 'gpt'];
 
 export default handler;
