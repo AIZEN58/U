@@ -1,10 +1,10 @@
 import fetch from 'node-fetch';
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-  if (!text) throw `*This command generates images from text prompts*\n\n*𝙴xample usage*\n*◉ ${usedPrefix + command} Beautiful anime girl*\n*◉ ${usedPrefix + command} ايلون ماسك بالزي الوردي*`;
+  if (!text) throw `*يقوم هذا الامر بانشاء صور حسب المتطلبات النصيةق*\n\n*مثال usage*\n*◉ ${usedPrefix + command} فتاة انمي جميلة*\n*◉ ${usedPrefix + command} ايلون ماسك بالزي الوردي*`;
 
   try {
-    m.reply('*Please wait, generating images...*');
+    m.reply('*الرجاء الانتظار جاري انشاء الصور...'*');
 
     const endpoint = `https://cute-tan-gorilla-yoke.cyclic.app/imagine?text=${encodeURIComponent(text)}`;
     const response = await fetch(endpoint);
@@ -22,5 +22,5 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 
 handler.help = ['dalle'];
 handler.tags = ['AI'];
-handler.command = ['dalle', 'شكل', 'imagine', 'صورة'];
+handler.command = ['dalle', 'شكل', 'imagine', 'مظهر'];
 export default handler;
