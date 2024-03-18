@@ -1,10 +1,10 @@
 import fetch from 'node-fetch';
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-  if (!text) throw `*This command generates images from text prompts*\n\n*𝙴xample usage*\n*◉ ${usedPrefix + command} Beautiful anime girl*\n*◉ ${usedPrefix + command} Elon Musk in pink output*`;
+  if (!text) throw `*This command generates images from text prompts*\n\n*مثال usage*\n*◉ ${usedPrefix + command} فتاة انمي جميلة*\n*◉ ${usedPrefix + command} ايلون ماسك بالزي الوردي*`;
 
   try {
-    m.reply('*Please wait, generating images...*');
+    m.reply('* من فضلك انتظر, يتم العمل على انشاء الصورة   *');
 
     const endpoint = `https://cute-tan-gorilla-yoke.cyclic.app/imagine?text=${encodeURIComponent(text)}`;
     const response = await fetch(endpoint);
@@ -13,14 +13,14 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
       const imageBuffer = await response.buffer();
       await conn.sendFile(m.chat, imageBuffer, 'image.png', null, m);
     } else {
-      throw '*Image generation failed*';
+      throw '*فشل في صناعة الصورة *';
     }
   } catch {
-    throw '*Oops! Something went wrong while generating images. Please try again later.*';
+    throw '*اوبس! حدث خطأ ما اثناء انشاء الصورة.الرجاء المحاولة مرة اخرى.*';
   }
 };
 
 handler.help = ['dalle'];
 handler.tags = ['AI'];
-handler.command = ['dalle', 'gen', 'imagine', 'openai2'];
+handler.command = ['dalle', 'شكل', 'imagine', 'مظهر'];
 export default handler;
