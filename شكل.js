@@ -1,7 +1,7 @@
 import fetch from 'node-fetch';
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-  if (!text) throw `*يقوم هذا الامر بانشاء صور حسب المتطلبات النصيةق*\n\n*مثال usage*\n*◉ ${usedPrefix + command} فتاة انمي جميلة*\n*◉ ${usedPrefix + command} ايلون ماسك بالزي الوردي*`;
+  if (!text) throw `*يقوم هذا الامر بانشاء صور حسب المتطلبات النصية*\n\n*مثال usage*\n*◉ ${usedPrefix + command} فتاة انمي جميلة*\n*◉ ${usedPrefix + command} ايلون ماسك بالزي الوردي*`;
 
   try {
     m.reply('*الرجاء الانتظار جاري انشاء الصور...'*');
