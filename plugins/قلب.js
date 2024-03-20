@@ -5,19 +5,19 @@ const handler = async (m, { conn, command, text }) => {
   const loveDescription = isHighLove ? "" : "";
   const getRandomMessage = (messages) => messages[Math.floor(Math.random() * messages.length)];
   const response =
-    ` *${text} احبك ❤️‍🔥💕*` +
+    ` *${text} عيوشة ليش زعلانة 😂😂*` +
     ``    
 
   async function loading() {
 var hawemod = [
-"💜",
-"💘",
-"💝",
-"💖",
-"💗",
-"💛",
-"💙",
-"🧡"
+"هلا يا رمانة 😂",
+"هلا يا رماانة",
+"عيوشة زعلانة 😂💔",
+"مين يراضيها مين منو يراضيها ❤️😂",
+"انا اراضيها ⭐ ",
+"انا💗",
+"انا اراضيها 🐥",
+"عيوشة الزعلانة🐤🧡"
 ]
    let { key } = await conn.sendMessage(m.chat, {text: `*جاري تحميل القلوب 😻😻*`, mentions: conn.parseMention(response)}, {quoted: m})
  for (let i = 0; i < hawemod.length; i++) {
@@ -30,5 +30,5 @@ loading()
 };
 handler.help = ['love'];
 handler.tags = ['fun'];
-handler.command = /^(قلب)$/i;
+handler.command = /^(عيوشه|عيوشة)$/i;
 export default handler;
