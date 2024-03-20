@@ -5,7 +5,7 @@ const handler = async (m, { conn, command, text }) => {
   const loveDescription = isHighLove ? "" : "";
   const getRandomMessage = (messages) => messages[Math.floor(Math.random() * messages.length)];
   const response =
-    ` *${text}  *عيوشة مو راضية تبتسم ليش؟😂💗*` +
+    ` *${text} *عيوشة مو راضية تبتسم ليش؟😂💗*` +
     ``    
 
   async function loading() {
