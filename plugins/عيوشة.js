@@ -19,7 +19,7 @@ var hawemod = [
 "مين يراضيها💙",
 "انا اراضيها انا🧡"
 ]
-   let { key } = await conn.sendMessage(m.chat, {text: `*جاري تحميل القلوب 😻😻*`, mentions: conn.parseMention(response)}, {quoted: m})
+   let { key } = await conn.sendMessage(m.chat, {text: `*جاري تحميل الأغنية💗🐥*`, mentions: conn.parseMention(response)}, {quoted: m})
  for (let i = 0; i < hawemod.length; i++) {
    await new Promise(resolve => setTimeout(resolve, 1000)); 
    await conn.sendMessage(m.chat, {text: hawemod[i], edit: key, mentions: conn.parseMention(response)}, {quoted: m}); 
