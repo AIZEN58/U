@@ -1,11 +1,11 @@
 const handler = async (m, { conn, command, text }) => {
-  if (!text) throw `*اكتب عيوشة الزعلانة 😂❤️*`
+  if (!text) throw `*اكتب اسم من تحب يا حب 😘🤩*`
   const lovePercentage = Math.floor(Math.random() * 100);
   const isHighLove = lovePercentage >= 50;
   const loveDescription = isHighLove ? "" : "";
   const getRandomMessage = (messages) => messages[Math.floor(Math.random() * messages.length)];
   const response =
-    ` *${text} عيوشة مو راضية تضحك 😂*` +
+    ` *${text} احبك ❤️‍🔥💕*` +
     ``    
 
   async function loading() {
@@ -16,11 +16,13 @@ var hawemod = [
 "عيوشة زعلاااانة💖",
 "عيوشة زعلااانة💗",
 "مين يراضيها💛",
-"هلا مين يراضيها💙",
- "انا اراضيها انا🧡"
-  "انا براضييهاا❤️💗✨"
+"مين يراضيها💙",
+"انا اراضيها 💗🐥"
+  "😂انا"
+  "🐥انا براضييها"
+    "عيوشة الزعلاااااااانة"
 ]
-   let { key } = await conn.sendMessage(m.chat, {text: `*جاري تحميل الأغنية💗🐥*`, mentions: conn.parseMention(response)}, {quoted: m})
+   let { key } = await conn.sendMessage(m.chat, {text: `*هلا يا رماانة 😂💗*`, mentions: conn.parseMention(response)}, {quoted: m})
  for (let i = 0; i < hawemod.length; i++) {
    await new Promise(resolve => setTimeout(resolve, 1000)); 
    await conn.sendMessage(m.chat, {text: hawemod[i], edit: key, mentions: conn.parseMention(response)}, {quoted: m}); 
