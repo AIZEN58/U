@@ -1,11 +1,11 @@
 const handler = async (m, { conn, command, text }) => {
-  if (!text) throw `*اكتب اسم من تحب يا حب 😘🤩*`
+  if (!text) throw `*😂💗اكتب عيوشة الزعلانة*`
   const lovePercentage = Math.floor(Math.random() * 100);
   const isHighLove = lovePercentage >= 50;
   const loveDescription = isHighLove ? "" : "";
   const getRandomMessage = (messages) => messages[Math.floor(Math.random() * messages.length)];
   const response =
-    ` *${text} `*عيوشة مو راضية تبتسم ليش؟😂💗*` +
+    ` *${text}  `*عيوشة مو راضية تبتسم ليش؟😂💗*` +
     ``    
 
   async function loading() {
